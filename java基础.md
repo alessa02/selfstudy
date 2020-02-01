@@ -20,6 +20,7 @@
 | 双精度浮点数 | double（默认） | 8个字节  | 4.9E-324~1.7977E+308   |
 | 字符型       | char           | 2个字节  | 0-65535                |
 | 布尔类型     | boolean        | 1个字节  | true，false            |
+小数一律默认double,float要在末尾加f,如float a=4.4f--**【和python不同】**  
 *****
 数据类型转换：  
 - 自动小范围转为大范围 byte、short、char‐‐>int‐‐>long‐‐>float‐‐>double
@@ -41,6 +42,7 @@ byte[] bytestr = str.getBytes();
 Java中纯整数计算结果必为纯整数; Java中True False 不能用0和1表示  
 数据类型 变量名 = 布尔类型表达式？结果1：结果2 
 s+=1 仅进行**一次**运算，且**赋值运算符自带类型转换**，而s=s+1只进行**两次**运算，必须写明类型转换  
+变量运算强制转为int
 ## 方法
 方法定义不能嵌套--**【和python不同！！！】**
 
