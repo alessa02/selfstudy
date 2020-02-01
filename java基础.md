@@ -37,3 +37,11 @@ byte[] bytestr = str.getBytes();
 //字符串转对应编码byte数组
 ```
 [getBytes()](https://blog.csdn.net/qq_38922435/article/details/80639621)
+
+Java中纯整数计算结果必为纯整数; Java中True False 不能用0和1表示  
+数据类型 变量名 = 布尔类型表达式？结果1：结果2 
+s+=1 仅进行**一次**运算，且**赋值运算符自带类型转换**，而s=s+1只进行**两次**运算，必须写明类型转换  
+## 方法
+方法定义不能嵌套--**【和python不同！！！】**
+
+
