@@ -25,4 +25,15 @@
 - 自动小范围转为大范围 byte、short、char‐‐>int‐‐>long‐‐>float‐‐>double
    - 损失精度
 - 强制 int i = (int)1.5; 浮点型转整型直接抹小数点; 整型转short 4字节去掉前两个字节
-   - 数据丢失
+   - 数据错误，尽量不要大-->小
+- ascii: 
+```int a='a';
+//char转int
+char b = 97;
+//int转char
+System.out.print((char)Integer.parseInt(str));
+//数字字符串转char
+byte[] bytestr = str.getBytes();
+//字符串转对应编码byte数组
+```
+[getBytes()](https://blog.csdn.net/qq_38922435/article/details/80639621)
