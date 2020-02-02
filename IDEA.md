@@ -1,2 +1,10 @@
-src-> new-> package创建多级文件夹，即包，用来管理类文件
-建好的package-> new-> class
+- src-> new-> package创建多级文件夹，即包，用来管理类文件  
+- 建好的package-> new-> class
+- out文件夹存储编译后的.class文件，src目录存储.java源文件
+- [mac idea 快捷键](https://blog.csdn.net/love284969214/article/details/94405414)
+   - Control + Space    基本的代码补全（补全任何类、方法、变量）
+   - Control + Shift + Space    智能代码补全（过滤器方法列表和变量的预期类型）
+   - Command + Shift + Enter    自动结束代码，行末自动添加分号
+   - Command + /    注释 / 取消注释与行注释
+   - Command + Option + /    注释 / 取消注释与块注释
+   
