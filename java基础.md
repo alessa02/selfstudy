@@ -184,7 +184,8 @@ int[] arr = {1,2,3,4,5};
 - 定义 `public class NewClass{成员变量;成员方法}`,成员方法定义不需要static
 - 创建对象`NewClass nc = new NewClass();`
 - 访问`nc.value;nc.function();`
-
+- main和要执行的函数都进栈内存，堆内存存放new出来的不同对象的变量和方法标记，方法本身存在方法区，使用方法标记节省空间
+![方法](https://github.com/alessa02/selfstudy/blob/master/img/%E6%96%B9%E6%B3%95.png)
 ### 继承
 ### 封装
 ### 多态
