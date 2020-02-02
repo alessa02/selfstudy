@@ -214,6 +214,7 @@ import com.yjn.demo.Student;
 - public提供访问入口，如getValue() setValue(),操作private变量,private变量可以有默认值
 - this变量为对象引用自己，方法中只有一个变量名时，默认也是使用 this 修饰，可以省略不写。
 - 构造方法：初始化对象，构造方法默认无参数,可重载
+- 类中成员变量默认是default/package，即只可在本包内访问
 ```
 // 无参数构造方法
 public Student() {}
