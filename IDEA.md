@@ -7,4 +7,4 @@
    - Command + Shift + Enter    自动结束代码，行末自动添加分号
    - Command + /    注释 / 取消注释与行注释
    - Command + Option + /    注释 / 取消注释与块注释
-   
+- 点open选目录开启已有项目
