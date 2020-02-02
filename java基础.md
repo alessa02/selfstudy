@@ -144,6 +144,29 @@ int[] arr = new int[]{1,2,3,4,5};
 int[] arr = {1,2,3,4,5};
 ```
 - 一旦规定长度则长度不可变，`arr.length`
+- new出的arr保存的是数组在堆内存中的16进制地址，称为**引用数据类型**,new出的数组初始值都是0
+- 数组越界抛出`ArrayIndexOutOfBoundsException`，空指针抛出`NullPointerException`
+<font color="red">交换两个数字的值可以不借助中间变量--3种方法</font>
+```
+//下面这两种可能溢出
+{
+    a = a + b;
+    b = a - b;
+    a = a - b;
+}
+{
+    a = a * b;
+    b = a / b;
+    a = a / b;
+}
+//下面这种利用异或
+{
+    a = a ^ b;
+    b = a ^ b;
+    a = a ^ b;
+}
+```
+
 
 ## 方法
 方法定义不能嵌套--**【和python不同！！！】**  
