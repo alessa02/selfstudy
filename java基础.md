@@ -203,6 +203,26 @@ int[] arr = {1,2,3,4,5};
 - private隐藏成员变量，仅可以类内访问
 - public提供访问入口，如getValue() setValue(),操作private变量
 - this变量为对象引用自己，方法中只有一个变量名时，默认也是使用 this 修饰，可以省略不写。
-- 构造方法：初始化对象，构造方法默认无参数
-- public提供访问入口，如getValue() setValue(),操作private变量
+- 构造方法：初始化对象，构造方法默认无参数,可重载
+```
+// 无参数构造方法
+public Student() {}
+// 有参数构造方法
+public Student(String name,int age) {
+this.name = name;
+this.age = age;
+}
+```
+- JavaBean规范：类必须是具体的和公共的，并且具有无参数的构造方法，提供用来操作成员变量的set 和get 方法。
+```
+public class ClassName{
+//成员变量
+//构造方法
+//无参构造方法【必须】
+//有参构造方法【建议】
+//成员方法
+//getXxx()
+//setXxx()
+}
+```
 ### 多态
