@@ -173,10 +173,16 @@ int[] arr = {1,2,3,4,5};
 - 数组做参数直接 `printArray(arr);  printArray(int[] arr) {}`,传地址
 - 做返回值返回地址 `public static int[] getArray() {}`,arr不随函数结束而释放内存，一直保留在堆内存中
 }
+********
 ```
 import java.util.Arrays;
 Arrays.toString(array)
 ```
+导包：也就是指出需要使用的类，在什么位置。  
+import 包名称.类名称;  
+import com.yjn.demo.Student;  
+对于和当前类属于同一个包的情况，可以省略导包语句不写。 
+********************
 ## 方法
 方法定义不能嵌套--**【和python不同！！！】**  
 函数回传值可以不用变量接着，直接用来参与计算或者if判断--**【和python相同】**    
