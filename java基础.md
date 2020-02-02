@@ -182,6 +182,7 @@ int[] arr = {1,2,3,4,5};
 ## 面向对象
 #### 类和对象
 - 定义 `public class NewClass{成员变量;成员方法}`,成员方法定义不需要static
+- 一个.java只能有一个public类
 - 创建对象`NewClass nc = new NewClass();`
 - 访问`nc.value;nc.function();`
 - main和要执行的函数都进栈内存，堆内存存放new出来的不同对象的变量和方法标记，方法本身存在方法区，使用方法标记节省空间
@@ -201,7 +202,7 @@ int[] arr = {1,2,3,4,5};
 ### 继承
 ### 封装
 - private隐藏成员变量，仅可以类内访问
-- public提供访问入口，如getValue() setValue(),操作private变量
+- public提供访问入口，如getValue() setValue(),操作private变量,private变量可以有默认值
 - this变量为对象引用自己，方法中只有一个变量名时，默认也是使用 this 修饰，可以省略不写。
 - 构造方法：初始化对象，构造方法默认无参数,可重载
 ```
