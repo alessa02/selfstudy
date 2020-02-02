@@ -53,6 +53,7 @@ byte[] bytestr = str.getBytes();
 1. byte/short/char这三种类型在运算的时候，都会被首先提升成为int类型，然后再计算。
 1. boolean类型不能发生数据类型转换
 1. +只有针对char和数字时会强制转为int,str中时字符串连接
+1. ''只用于char,""只用于string  
 **********
 1. if...else if ...else  
 2. switch  
