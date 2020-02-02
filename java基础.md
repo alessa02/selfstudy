@@ -226,4 +226,8 @@ public class ClassName{
 //setXxx()
 }
 ```
+使用对象类型作为方法的参数  
+![使用对象类型作为方法的参数](https://github.com/alessa02/selfstudy/blob/master/img/04-%E4%BD%BF%E7%94%A8%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B%E4%BD%9C%E4%B8%BA%E6%96%B9%E6%B3%95%E7%9A%84%E5%8F%82%E6%95%B0.png)  
+使用对象类型作为方法的返回值  
+![使用对象类型作为方法的返回值](https://github.com/alessa02/selfstudy/blob/master/img/05-%E4%BD%BF%E7%94%A8%E5%AF%B9%E8%B1%A1%E7%B1%BB%E5%9E%8B%E4%BD%9C%E4%B8%BA%E6%96%B9%E6%B3%95%E7%9A%84%E8%BF%94%E5%9B%9E%E5%80%BC.png)  
 ### 多态
