@@ -145,8 +145,8 @@ int[] arr = {1,2,3,4,5};
 ```
 - 一旦规定长度则长度不可变，`arr.length`
 - new出的arr保存的是数组在堆内存中的16进制地址，称为**引用数据类型**,new出的数组初始值都是0
-- 数组越界抛出`ArrayIndexOutOfBoundsException`，空指针抛出`NullPointerException`
-<font color="red">交换两个数字的值可以不借助中间变量--3种方法</font>
+- 数组越界抛出`ArrayIndexOutOfBoundsException`，空指针抛出`NullPointerException`  
+<p><font color="red">交换两个数字的值可以不借助中间变量--3种方法</font></p>  
 ```
 //下面这两种可能溢出
 {
@@ -166,7 +166,9 @@ int[] arr = {1,2,3,4,5};
     a = a ^ b;
 }
 ```
-
+- 数组做参数直接 `printArray(arr);  printArray(int[] arr) {}`,传地址
+- 做返回值返回地址 `public static int[] getArray() {}`,arr不随函数结束而释放内存，一直保留在堆内存中
+}
 
 ## 方法
 方法定义不能嵌套--**【和python不同！！！】**  
