@@ -237,7 +237,7 @@ public class ClassName{
 }
 ```
 使用对象类型作为方法的参数  
-![使用对象类型作为方法的参数](https://github.com/alessa02/selfstudy/blob/master/img/04-使用对象类型作为方法的参数.png)  
+![4.png](https://i.loli.net/2020/02/02/a4RFfhpV2tzEArx.png)  
 使用对象类型作为方法的返回值  
-![使用对象类型作为方法的返回值](https://github.com/alessa02/selfstudy/blob/master/img/05-使用对象类型作为方法的返回值.png)  
+![5.png](https://i.loli.net/2020/02/02/in24jEK1YA56yWF.png)
 ### 多态
