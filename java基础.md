@@ -287,4 +287,18 @@ public class ClassName{
 ![4.png](https://i.loli.net/2020/02/02/a4RFfhpV2tzEArx.png)  
 使用对象类型作为方法的返回值  
 ![5.png](https://i.loli.net/2020/02/02/in24jEK1YA56yWF.png)
+### 接口
+- 封装了方法，包含抽象方法（JDK 7及以前），默认方法和静态方法（JDK 8），私有方法（JDK 9）。
+- `interface`，会被编译成.class文件，是另外一种引用数据类型,并不是类
+   ```
+   public interface 接口名称 {
+   // 抽象方法
+   // 默认方法
+   // 静态方法
+   // 私有方法
+   }
+   ```
+- 默认方法：使用`default`修饰，不可省略，供子类调用或者子类重写。
+- 静态方法：使用`static`修饰，供接口直接调用。
+- 私有方法：使用`private`修饰，供接口中的默认方法或者静态方法调用。
 ### 多态
