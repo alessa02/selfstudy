@@ -36,7 +36,7 @@ int number = r.nextInt(100) + 1;
 ### ArrayList 类
 普通创建数组: Student[] students = new Student[3];  
 ArrayList: 大小可变的数组  java.util.ArrayList <E>,此处<E>为泛型，用引用数据类型替换，不能存基本数据类型如int/char/float/double/short/byte,但可以存储其对应的包装类型Integer/Character/Short/Double/Float/Byte等。  
-
+包装类（引用类型，包装类都位于java.lang包下）  
 ```
 import java.util.ArrayList
 构造方法 public ArrayList() ：构造一个内容为空的集合。
