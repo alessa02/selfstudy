@@ -66,8 +66,34 @@ String str3 = new String(bytes);
 4. s.concat(s2)
 5. s.charAt(index) 指定索引处的 char值
 6. s.indexOf(substr) 子字符串第一次出现在该字符串内的索引
-7. s.substring(beginIndex,endIndex)
+7. s.substring(beginIndex,endIndex)  
 8. s.toCharArray ()
 9. s.getBytes ()
 10. s.replace("it", "IT") 所有出现的都替换
 11. s.split("|")
+### Static
+`spublic static int numberOfStudent = 0;`设定变量为类变量，即所有该类对象共享同一个类变量值，任何对象都可以更改
+该类变量的值，也可以在不创建该类的对象的情况下对类变量进行操作   
+`public static void showNum()`定义静态方法  
+   - 静态方法只能访问静态成员【静态方法+类变量】。
+   - 静态方法不能直接访问普通成员变量或成员方法。反之，成员方法可以直接访问类变量或静态方法。
+   - 静态方法中，不能使用this关键字。
+   - 通过**类名.静态成员名**访问，而不是对象名.静态成员名
+static成员随着类的加载而加载，且只加载一次。栈内存中是对象地址，对象本身存在堆内存，有静态标记指向方法区内固定的静态区   
+##### 静态代码块
+给类变量进行初始化赋值，随着类的加载而执行且执行一次，优先于main方法和构造方法的执行
+```
+public class Game {
+  public static int number;
+  public static ArrayList<String> list;
+  static {
+    // 给类变量赋值
+    number = 2;
+    list = new ArrayList<String>();
+    // 添加元素到集合中
+    list.add("张三");
+    list.add("李四");
+    }
+}
+```
+**Static主要目的还是想在不创建对象的情况下，去调用方法,例如java.util.Arrays中有操作数组的静态方法，Arrays.toString(arr);Arrays.sort(arr);等**
