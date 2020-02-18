@@ -46,3 +46,14 @@ list.remove(1); //删除index=1位置的元素
 list.get(1); //获取index=1的元素
 list.size(); //获取size
 ```
+### String 类
+String创建后不能修改，所以在内存中可以被共享  
+java.lang.String不需要导入 
+构造方法：String(char[] value)/String(byte[] bytes)使用平台的默认字符集解码当前参数中的字节数组来构造新的
+String    
+```
+String str = "abc";
+相当于：
+char data[] = {'a', 'b', 'c'};
+String str = new String(data);
+```
