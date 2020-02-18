@@ -48,7 +48,7 @@ list.size(); //获取size
 ```
 ### String 类
 String创建后不能修改，所以在内存中可以被共享  
-java.lang.String不需要导入 
+java.lang.String不需要导入   
 构造方法：String(char[] value)/String(byte[] bytes)使用平台的默认字符集解码当前参数中的字节数组来构造新的
 String    
 ```
@@ -56,4 +56,18 @@ String str = "abc";
 相当于：
 char data[] = {'a', 'b', 'c'};
 String str = new String(data);
+相当于：
+byte bytes[] = { 97, 98, 99 };
+String str3 = new String(bytes);
 ```
+1. s1.equals(s2) 字符串是否一样--考虑大小写
+2. s1.equalsIgnoreCase(s2) 忽略大小写
+3. s.length()
+4. s.concat(s2)
+5. s.charAt(index) 指定索引处的 char值
+6. s.indexOf(substr) 子字符串第一次出现在该字符串内的索引
+7. s.substring(beginIndex,endIndex)
+8. s.toCharArray ()
+9. s.getBytes ()
+10. s.replace("it", "IT") 所有出现的都替换
+11. s.split("|")
