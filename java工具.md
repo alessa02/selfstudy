@@ -47,10 +47,13 @@ list.get(1); //获取index=1的元素
 list.size(); //获取size
 ```
 ### String 类
-String创建后不能修改，所以在内存中可以被共享  
-java.lang.String不需要导入   
-构造方法：String(char[] value)/String(byte[] bytes)使用平台的默认字符集解码当前参数中的字节数组来构造新的
-String    
+- String创建后不能修改，所以在内存中可以被共享  
+- java.lang.String不需要导入   
+- 构造方法：String(char[] value)/String(byte[] bytes)使用平台的默认字符集解码当前参数中的字节数组来构造新的
+String   
+- 字符串常量池：程序当中直接写上的双引号字符串，就在字符串常量池中。
+- 对于基本类型来说，==是进行数值的比较。
+- 对于引用类型来说，==是进行**【地址值】**的比较
 ```
 String str = "abc";
 相当于：
@@ -78,7 +81,7 @@ String str3 = new String(bytes);
    - 静态方法只能访问静态成员【静态方法+类变量】。
    - 静态方法不能直接访问普通成员变量或成员方法。反之，成员方法可以直接访问类变量或静态方法。
    - 静态方法中，不能使用this关键字。
-   - 通过**类名.静态成员名**访问，而不是对象名.静态成员名
+   - 通过**类名.静态成员名**访问，而不是对象名.静态成员名   
 static成员随着类的加载而加载，且只加载一次。栈内存中是对象地址，对象本身存在堆内存，有静态标记指向方法区内固定的静态区   
 ##### 静态代码块
 给类变量进行初始化赋值，随着类的加载而执行且执行一次，优先于main方法和构造方法的执行
@@ -96,4 +99,8 @@ public class Game {
     }
 }
 ```
-**Static主要目的还是想在不创建对象的情况下，去调用方法,例如java.util.Arrays中有操作数组的静态方法，Arrays.toString(arr);Arrays.sort(arr);等**
+**Static主要目的还是想在不创建对象的情况下，去调用方法,例如java.util.Arrays中有操作数组的静态方法，Arrays.toString(arr);Arrays.sort(arr);等**  
+### Math 类
+java.lang.Math
+Math.abs(int)/ceil/floor/round
+
